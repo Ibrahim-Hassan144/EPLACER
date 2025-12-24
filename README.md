@@ -73,7 +73,7 @@ A full walkthrough of the system, including login, browsing placements, applying
 
 
 
-*(You can link a YouTube, Google Drive, or unlisted Vimeo video.)*
+
 
 ---
 
