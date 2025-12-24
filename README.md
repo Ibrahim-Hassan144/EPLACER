@@ -13,8 +13,10 @@ This project was developed in response to a clearly identified problem faced by 
 Students are required to complete community service hours but face:
 - Outdated placement lists with no live availability
 - Repeated calls to already-full organizations
+- Vague or incomplete location information (e.g., listings that only state “Karen” without clear directions)
 - High stress due to tight placement deadlines
 - No centralized system to track applications
+
 
 E-Placer addresses these challenges through automation, transparency, and real-time updates.
 ## 🎥 Project Demo Video
