@@ -21,9 +21,9 @@ E-Placer addresses these challenges through automation, transparency, and real-t
 A full walkthrough of the system, including login, browsing placements, applying, and viewing application status, is available here:
 
 👉 **Project Demo Video:**  
-**[INSERT VIDEO LINK HERE]**
+**https://youtu.be/DBt8I_I8A6M**
 
-*(You can link a YouTube, Google Drive, or unlisted Vimeo video.)*
+
 
 ---
 
