@@ -1,217 +1,84 @@
-🟦 E-PLACER — Community Service & Internship Placement System
+# E-Placer 🎓🤝  
+*A Centralized Community Service Placement Platform for University Students*
 
-E-Placer is a full-stack platform designed to help university students easily discover, apply for, and track Community Service placements and Internships, while providing administrators with a secure dashboard to manage applications and opportunities.
+## 📌 Project Overview
+E-Placer is a web-based platform designed to modernize and streamline how university students discover and apply for community service placements.  
+The system replaces inefficient manual processes (PDF lists, phone calls, and physical visits) with a **real-time, digital, and student-centered solution**.
 
-Built with React (Vite), Tailwind CSS, Node.js + Express, and MongoDB.
+This project was developed in response to a clearly identified problem faced by students at **USIU-Africa**, where securing community service placements is mandatory for graduation but currently handled through outdated methods :contentReference[oaicite:0]{index=0}.
 
-🚀 Features
-🧑‍🎓 Student Features
+---
 
-Secure JWT login
+## 🎯 Problem Statement
+Students are required to complete community service hours but face:
+- Outdated placement lists with no live availability
+- Repeated calls to already-full organizations
+- High stress due to tight placement deadlines
+- No centralized system to track applications
 
-Browse categorized Community Service placements
+E-Placer addresses these challenges through automation, transparency, and real-time updates.
+## 🎥 Project Demo Video
+A full walkthrough of the system, including login, browsing placements, applying, and viewing application status, is available here:
 
-Browse categorized Internships (Tech, Finance, Media, HR, etc.)
+👉 **Project Demo Video:**  
+**[INSERT VIDEO LINK HERE]**
 
-Scrollable, modern Airbnb-style card layout
+*(You can link a YouTube, Google Drive, or unlisted Vimeo video.)*
 
-Side-panel with maps and contact info for CS placements
+---
 
-Full internship application form (PDF CV upload)
+## ✨ Key Features
+### 👩‍🎓 Student Features
+- Browse available community service placements
+- View real-time slot availability
+- Apply to placements with one click
+- Track application status (Pending / Accepted / Rejected)
+- Cancel applications where applicable
+- Secure login and protected routes
 
-View all submitted applications in My Applications
+### 🧑‍💼 Administrative Benefits
+- Centralized tracking of student placements
+- Reduced manual coordination
+- Clear oversight of student participation
+- Scalable structure for future expansion
 
-Cancel applications (slot auto-restore)
+---
 
-Application statuses: Pending → Accepted / Rejected
+## 🛠️ Tech Stack
+**Frontend**
+- React (Vite)
+- Tailwind CSS
+- React Router
+- Axios
 
-🛠️ Admin Features
+**Backend**
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
 
-Secure Admin login
+**Other Tools**
+- LocalStorage (for session handling in demo phase)
+- Git & GitHub for version control
+- Postman for API testing
 
-View all applications system-wide
+---
 
-Approve / Reject applications
+## 🏗️ System Architecture (High Level)
+- React frontend communicates with a RESTful API
+- Express server handles authentication, placements, and applications
+- MongoDB stores users, placements, and application records
+- Role-based routing separates student and admin views
 
-View uploaded CVs
+---
 
-Manage placements & internships (Create, Update, Delete)
 
-⚙️ Backend Core Features
 
-REST API built with Express
+*(You can link a YouTube, Google Drive, or unlisted Vimeo video.)*
 
-MongoDB storage with Mongoose models:
+---
 
-Users
+## 👤 Author
+**IBRAHIM HASSAN**  
 
-Placements
 
-Internships
 
-Applications
-
-Password hashing (bcryptjs)
-
-JWT authentication middleware
-
-Multer file upload system for CVs
-
-Role-based access control (Student / Admin)
-
-Automatic slot decrement + restore on cancel
-
-🧰 Tech Stack
-Frontend
-
-React 18 + Vite
-
-Tailwind CSS
-
-Axios
-
-React Router
-
-Backend
-
-Node.js + Express
-
-MongoDB + Mongoose
-
-Multer (CV uploads)
-
-JWT Auth
-
-bcryptjs
-
-CORS + Morgan
-
-📁 Project Structure
-eplacer/
-│
-├── eplacer-frontend/
-│   ├── src/
-│   ├── public/
-│   └── vite.config.js
-│
-├── eplacer-backend/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── uploads/
-│   ├── seed.js
-│   └── server.js
-│
-└── README.md
-
-▶️ Running the Project
-Frontend
-cd eplacer-frontend
-npm install
-npm run dev
-
-
-Runs at: http://localhost:5173
-
-Backend
-cd eplacer-backend
-npm install
-npm run dev
-
-
-Runs at: http://localhost:5000
-
-🔐 Environment Setup
-
-Create /eplacer-backend/.env:
-
-MONGO_URI=mongodb+srv://<your-connection-string>
-JWT_SECRET=supersecret123
-PORT=5000
-
-🌱 Database Seeding
-
-Run once to create initial data:
-
-node seed.js
-
-
-This seeds:
-
-Admin account
-
-Community service placements
-
-Internships
-
-🔑 Default Login Credentials
-Admin
-Email: admin@eplacer.test
-Password: admin123
-
-Student (if seeded)
-Email: student@eplacer.test
-Password: student123
-
-📌 API Endpoints (Short Version)
-Authentication
-
-POST /api/auth/login
-
-POST /api/auth/register (optional)
-
-Placements
-
-GET /api/placements
-
-GET /api/placements/:id
-
-(Admin): POST /api/placements
-
-(Admin): PUT /api/placements/:id
-
-(Admin): DELETE /api/placements/:id
-
-Internships
-
-GET /api/internships
-
-GET /api/internships/:id
-
-(Admin) CRUD operations
-
-Applications
-
-POST /api/applications (student)
-
-GET /api/applications/me/list (student)
-
-GET /api/applications (admin)
-
-PUT /api/applications/:id/status (admin)
-
-DELETE /api/applications/:id (admin)
-
-📌 Known Working Features
-
-Student & admin login
-
-Full application workflow (submit → view → cancel)
-
-Admin review dashboard
-
-File upload (PDF CV)
-
-Dynamic internship categories
-
-Slot decrement + restore
-
-🎯 Future Enhancements
-
-Email notifications
-
-Analytics dashboard for admins
-
-Cloud image hosting (Cloudinary)
-
-University SSO login integration
